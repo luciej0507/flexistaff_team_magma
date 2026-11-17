@@ -1,0 +1,6 @@
+- 18 entrainements réalisés avec diffèrentes versions et taille de YOLO (YOLOv8s, YOLOv8n, YOLO11s, YOLO26s).
+- Pour chaque entrainement : même taille d'image (640) et même nombre d'epochs (50) pour avoir des résultats comparables. 
+- Ajout de données simulées grâce au générateur : 200 images de synthèses ont été ajoutées au dataset de départ.
+- Tests complémentaires avec de nouveau dataset : 
+  - entrainement avec d'autres taille d'image (960 au lieu de 640)
+  - entrainements réalisés avec GPU (sur Colab) et sur CPU.
