@@ -19,5 +19,16 @@ __pycache__/
 venv/
 .ipynb_checkpoints/
 
+# Test OCR : fichiers téléchargés ou produits par OCR/test_ocr_champion.ipynb (se retéléchargent)
+OCR/test_ocr*/
+OCR/*.zip
+OCR/modele_*/
+OCR/test_team-*/
+OCR/mesure_inference.py
+OCR/ocr_*.json
+
+# macOS : fichier caché créé par le Finder dans chaque dossier
+.DS_Store
+
 # Fichiers
 draft.md
