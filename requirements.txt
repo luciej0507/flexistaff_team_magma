@@ -1,0 +1,23 @@
+# Bibliothèques Python du projet FlexiStaff (entraînement YOLO, suivi MLflow, export ONNX).
+# Versions fixées : tout le monde dans l'équipe obtient le même environnement, et un run se refait à l'identique.
+# Python 3.12 conseillé (les versions récentes de PyTorch ne prennent plus en charge Python 3.9).
+#
+# Installation, dans un environnement virtuel propre au projet :
+#   uv venv --python 3.12 .venv
+#   uv pip install --python .venv/bin/python -r requirements.txt
+
+# Détection YOLO ; installe aussi PyTorch, qui fait les calculs (sur le GPU du Mac via MPS)
+ultralytics==8.4.215
+torch==2.15.0
+torchvision==0.29.2
+
+# Suivi des entraînements et registre de modèles
+mlflow==3.18.0
+
+# Export du modèle au format ONNX, celui que charge l'application
+onnx==1.23.2
+onnxruntime==1.32.0
+onnxslim==0.1.99
+
+# Pour exécuter le notebook ai_training/entrainement_yolo.ipynb dans VS Code ou Jupyter
+ipykernel
